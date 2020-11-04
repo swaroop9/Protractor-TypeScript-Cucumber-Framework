@@ -1,0 +1,34 @@
+A new repo from scratch: $ git init
+
+        Create a directory to contain the project.
+        Go into the new directory.
+        Type git init.
+        Write some code.
+        Type git add to add the files (see the typical use page).
+        Type git commit.
+
+
+
+Create a new Nodejs Project with package.json : $ npm init
+        Initiliazes the package.json
+
+Create a tsconfig.json : $ tsc -- init
+        Initiliazes the ptsconfig.json 
+
+Protractor Using Type Script:
+         https://www.protractortest.org/#/typescript
+
+
+# Protractor-TypeScript-Cucumber-Framework
+
+    Ambient typings
+        Protractor also uses ambient types including jasmine, jasminewd2, and node. These are brought in via the tsconfig.json file, which uses npm module resolution to get types from node_modules/@types.
+
+        If you are using the jasmine framework for your tests, make sure to do:
+
+            npm install --save-dev @types/jasmine @types/jasminewd2
+    Compiling your code
+        To convert your typescript to javascript (transpiling), you'll use the Typescript compiler (tsc). If you install typescript globally, the command is tsc. If it is not installed globally, the typescript compiler can be executed with npm run tsc.
+
+    Running Protractor
+        After transpiling your code to javascript, you'll run Protractor like before: protractor conf.js

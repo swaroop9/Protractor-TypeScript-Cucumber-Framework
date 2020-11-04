@@ -1,0 +1,47 @@
+{
+  "name": "protractor-typescript-cucumber-framework",
+  "version": "1.0.0",
+  "description": "It's cucumber based framework using Prptractor-TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "protractor JSFiles/config.js",
+    "cucumber-test": "protractor JSFiles/config-cucumber.js",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "debug": "node --inspect-brk ./node_modules/.bin/protractor asyncAwait/conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swaroop9/Protractor-TypeScript-Cucumber-Framework.git"
+  },
+  "keywords": [
+    "Cucumber",
+    "TypeScript",
+    "Protractor"
+  ],
+  "author": "Poorna Yaganti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swaroop9/Protractor-TypeScript-Cucumber-Framework/issues"
+  },
+  "homepage": "https://github.com/swaroop9/Protractor-TypeScript-Cucumber-Framework#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "jasmine": "^3.6.3",
+    "protractor": "^7.0.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/cucumber": "^6.0.1",
+    "@types/jasmine": "^3.6.0",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^14.14.6",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^4.0.4",
+    "protractor-cucumber-framework": "^6.2.1",
+    "ts-node": "^3.0.2"
+  }
+}
